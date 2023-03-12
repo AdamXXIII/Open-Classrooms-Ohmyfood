@@ -1,0 +1,50 @@
+/* This folder contains files that define the basic styles. */
+/* Variables defining your color palette */
+@import "./base/colors";
+/* Styles that reset or normalize the default styles of HTML elements */
+@import "./base/reset";
+/* Styles for headings, paragraphs, and other text elements */
+@import "./base/typo";
+
+
+/* This folder contains files that define styles for individual components. */
+/* Styles for different types of buttons */
+@import "./components/buttons";
+/* Styles for card-like elements */
+@import "./components/cards";
+
+
+/* This folder contains files that define the overall layout and structure. */
+/* Styles for your grid system */
+@import "./layout/flexbox";
+/* Styles for your site or app's footer */
+@import "./layout/footer";
+/* Styles for your site or app's header */
+@import "./layout/header";
+
+
+/* This folder contains files that define styles that are specific to individual pages. */
+/* Styles for your site or app's home page */
+@import "./pages/home";
+/* Styles for your site or app's menu page la franc */
+@import "./pages/menu-la-franc";
+/* Styles for your site or app's menu page la note */
+@import "./pages/menu-la-note";
+/* Styles for your site or app's menu page la palette */
+@import "./pages/menu-la-palette";
+/* Styles for your site or app's menu page la de */
+@import "./pages/menu-le-de";
+
+
+/* This folder contains files that define utility classes or functions that can be reused throughout. */
+/* Mixins or functions to help with common styling tasks */
+@import "./utils/helpers";
+/* Media queries and styles for different screen sizes */
+@import "./utils/responsive";
+/* Variables used throughout your project, such as spacing or border-radius */
+@import "./utils/var";
+
+/* This folder contains files for any third-party libraries or vendor styles that you may be using. */
+/* Styles for Font Awesome icons */
+@import "./vendors/fontawesome";
+

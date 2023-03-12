@@ -1,0 +1,29 @@
+/*Styles for your site or app's header */
+@use "../base/_colors.scss" as c;
+@use '../utils/_helpers.scss' as h;
+
+
+header {
+  @include h.flex(row, flex-start, center);
+  background-color: c.$white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.15);
+  padding: 20px 0;
+  z-index: 1;
+
+  &.home .fa-arrow-left {
+    display: none;
+  }
+
+  &:not(.home) .fa-arrow-left {
+    display: block;
+    margin: 10px;
+  }
+}
+
+.headerlogo {
+  padding-left: 30px;
+  padding-right: 90px;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}

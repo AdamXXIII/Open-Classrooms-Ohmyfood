@@ -1,0 +1,56 @@
+/*Styles for your site or app's home page */
+@use '../utils/_helpers.scss' as h;
+@use '../base/_colors.scss' as c;
+@use '../base/_typo.scss' as t;
+
+.loctation {
+    @include h.flex(row,center,center);
+    padding: 25px 0;
+    background-color: c.$geogrey;
+    z-index: 0;
+}
+
+.center-container {
+    @include h.flex(column, center, center);
+
+    &-heading, &-description {
+        text-align: center;
+    }
+}
+
+.container {
+    @include h.flex(column, start, center);
+    margin: 30px; 
+
+    
+    &-content {
+      @include h.flex(row, flex-start, center);
+      width: 100%;
+      
+      
+      &-list {
+        color: $white;
+        margin-right: -25px;
+        background-color: $purple;
+        padding: 5px 10px;
+        border-radius: 20px;
+        z-index: 1;
+      }
+      &-card {
+        @include h.flex(row, flex-start, center);
+        @extend .card;
+        padding: 15px 15px;
+
+        &:hover {
+            background-color: c.$lightpink;
+
+            i {
+                color: c.$purple;
+            }
+          }
+      }
+    }
+  }
+  .restaurants {
+    padding: 20px;;
+  }

@@ -1,0 +1,30 @@
+/*Styles for card-like elements */
+@use '../base/_typo.scss' as t;
+@use "../base/_colors.scss" as c;
+@use '../utils/_helpers.scss' as h;
+
+.card {
+    @include h.card-styles(c.$white, auto, 100%);
+    margin: 10px;
+    max-width: 400px;
+    &-img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px;
+    }
+    &-conent {
+
+    }
+
+}
+
+
+.card-label {
+    @include h.flex(row, center, center);
+    
+    background-color: c.$teal;
+    width: 100px;
+    border-radius: 5px;
+
+}
