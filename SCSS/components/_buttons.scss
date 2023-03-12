@@ -5,7 +5,7 @@
 
 .button {
     color: c.$white;
-    background-image: linear-gradient(to bottom, c.$pink, c.$purple);
+    background-image: c.$gradient;
     border-radius: 25px;
     margin: 15px 5px 40px 5px;
 }

@@ -13,6 +13,9 @@ $grey: #f6f6f6;
 $geogrey: #eaeaea;
 $darkgrey: #353535;
 
+$gradient:linear-gradient(to bottom, $pink, $purple);
+
 .bg-grey {
     background-color: $grey;
 }
+
