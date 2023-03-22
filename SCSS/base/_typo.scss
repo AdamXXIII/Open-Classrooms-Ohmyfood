@@ -1,7 +1,5 @@
-/*Styles for headings, paragraphs, and other text elements */
-
-$titles: 'Shrikhand', cursive;
-$text: 'Roboto', sans-serif;
+$titles: "Shrikhand", cursive;
+$text: "Roboto", sans-serif;
 
 $icon-small: 16px;
 $icon-med: 20px;
@@ -10,8 +8,37 @@ $icon-big: 24px;
 $textbold: 800;
 $textlight: 300;
 
-$text-small: 16px;
+$text-small: 12px;
 $text-med: 20px;
 $text-big: 24px;
 
+.text-small {
+  font-size: $text-small;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 272px;
+}
 
+.text-med {
+  font-size: $text-med;
+}
+
+.text-big {
+  font-size: $text-big;
+}
+
+.text-bold {
+  font-weight: $textbold;
+}
+
+.text-light {
+  font-weight: $textlight;
+  font-size: 18px;
+}
+
+.text-small {
+  position: relative;
+  z-index: 0;
+  transition: max-width 0.5s ease;
+}

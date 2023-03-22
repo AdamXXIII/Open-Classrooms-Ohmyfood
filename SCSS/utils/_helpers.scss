@@ -3,17 +3,22 @@
 //defining mixins//
 
 @mixin flex($direction, $justify, $align) {
-    display: flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-  }
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
 
-@mixin card-styles($bg-color, $height: auto, $width: 100% ) {
-    background-color: $bg-color;
-    height: $height;
-    width: $width;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-    
+@mixin card-styles($bg-color, $height: auto, $width: 100%) {
+  background-color: $bg-color;
+  height: $height;
+  width: $width;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+@mixin slide-up($delay) {
+  animation: slide-up 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.25s both;
+  animation-delay: $delay;
 }

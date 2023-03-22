@@ -1,0 +1,160 @@
+@use "../utils/_helpers.scss" as h;
+@use "../base/_colors.scss" as c;
+@use "../base/_typo.scss" as t;
+
+.full-width-image {
+  width: 100%;
+  height: 38vh;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+}
+
+.menu-background {
+  background-color: c.$grey;
+  border-radius: 25px 25px 0 0;
+  position: relative;
+  margin-top: -50px;
+
+
+  h1 {
+    padding: 40px 10px;
+  }
+
+  & .empty {
+    position: relative;
+    float: right;
+    bottom: 80px;
+  }
+
+  & .full {
+    position: relative;
+    right: 24px;
+    float: right;
+    bottom: 80px;
+  }
+
+  & .row-align {
+    @include h.flex(row, space-between, center);
+  }
+}
+
+.menu {
+  .menu-header::after {
+    content: "";
+    display: block;
+    width: 10%;
+    border-bottom: 3px solid c.$teal;
+  }
+
+}
+
+.text-price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.entrees,
+.main-dish,
+.desserts {
+  animation: slide-up 1s ease-out forwards;
+  animation-delay: 0.25s;
+
+  .card,
+  .container-content-card {
+    position: relative;
+    background-color: white;
+    height: auto;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    max-width: 350px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  p {
+    line-height: 1.5px;
+  }
+}
+
+
+.entrees {
+  @include h.slide-up(0.25s);
+}
+
+.main-dish {
+  @include h.slide-up(0.50s);
+}
+
+.desserts {
+  @include h.slide-up(0.75s);
+}
+
+@keyframes slide-up {
+  0% {
+
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.check__container {
+  @include h.flex(null, center, center);
+  position: absolute;
+  right: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: c.$teal;
+  width: 80px;
+  height: 100px;
+  transition: right 0.5s ease;
+  z-index: 1;
+}
+
+.fa-circle-check {
+  color: white;
+  transform: rotate(0);
+  transition: transform 0.5s ease;
+}
+
+.text-bold {
+  position: absolute;
+  right: -3px;
+  transition: right 0.5s ease;
+}
+
+.card:hover {
+  .check__container {
+    right: 0px;
+  }
+
+  .fa-circle-check {
+    transform: rotate(360deg);
+  }
+
+  .text-bold {
+    right: 65px;
+  }
+}
+
+.card:hover .text-price-hover {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 60%;
+}

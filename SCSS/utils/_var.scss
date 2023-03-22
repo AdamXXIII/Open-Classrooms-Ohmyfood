@@ -1,71 +1,62 @@
 /*Variables used throughout your project, such as spacing or border-radius */
-@use '../base/_typo.scss' as t;
+@use "../base/_typo.scss" as t;
 @use "../base/_colors.scss" as c;
-
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   margin: 0px;
-  
 }
 
-p, ul, ol, li, a {
+body {
+  overflow-x: hidden;
+}
+
+p,
+ul,
+ol,
+li,
+a {
   font-family: t.$text;
   padding: 5px 10px;
   margin: 5px;
 }
 
-h1{
+h6,
+h4,
+h1 {
   font-family: t.$titles;
+  padding: 0px 10px;
+  margin: 5px;
+  font-size: 27px;
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h5 {
   font-family: t.$text;
-  padding: 5px 10px;
+  padding: 5px 15px;
 }
 
 a {
-    text-decoration: none;
-    color: c.$black;
-}
-
-.text-small {
-    font-size: t.$text-small;
-}
-.text-med {
-    font-size: t.$text-med ;
-}
-.text-big {
-    font-size: t.$text-big;
-}
-
-.text-bold {
-    font-weight: t.$textbold;
-}
-.text-light {
-    font-weight: t.$textlight;
-}
-
-.icon-small {
-    font-size: t.$icon-small;
-}
-.icon-med {
-    font-size: t.$icon-med;
-}
-.icon-big {
-    font-size: t.$icon-big;
-}
-
-.icon-card {
-    padding: 0 15px;
-}
-
-.icon--color-grey {
-    color: c.$darkgrey;
+  text-decoration: none;
+  color: c.$black;
 }
 
 .hide {
-    display: none !important;
+  display: none !important;
+}
+
+.full {
+  background-color: c.$grey;
+  opacity: 0;
+  z-index: 1;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+
+  &:hover {
+    opacity: 1;
+  }
 }

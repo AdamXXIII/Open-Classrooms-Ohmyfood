@@ -1,241 +1,25 @@
 /* This folder contains files that define the basic styles. */
 /* Variables defining your color palette */
-/*Variables defining your color palette*/
-/*Primary */
-/*Secondary */
-/*Tertiary*/
+.gradient {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  z-index: 1;
+  position: relative;
+}
+
 .bg-grey {
   background-color: #f6f6f6;
 }
 
-/* Styles that reset or normalize the default styles of HTML elements */
-/*Styles that reset or normalize the default styles of HTML elements*/
 /* Styles for headings, paragraphs, and other text elements */
-/*Styles for headings, paragraphs, and other text elements */
-/* This folder contains files that define styles for individual components. */
-/* Styles for different types of buttons */
-/*Styles for headings, paragraphs, and other text elements */ /*Variables defining your color palette*/
-/*Primary */
-/*Secondary */
-/*Tertiary*/
-.bg-grey {
-  background-color: #f6f6f6;
-}
-
-/*Mixins or functions to help with common styling tasks */ /* Styles for different types of buttons */
-.button {
-  color: white;
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-  border-radius: 25px;
-  margin: 15px 5px 40px 5px;
-}
-
-.button-utils {
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
-  padding: 15px 20px;
-  border: none;
-}
-
-/* Styles for card-like elements */
-/*Styles for headings, paragraphs, and other text elements */ /*Variables defining your color palette*/
-/*Primary */
-/*Secondary */
-/*Tertiary*/
-.bg-grey {
-  background-color: #f6f6f6;
-}
-
-/*Mixins or functions to help with common styling tasks */ /*Styles for card-like elements */
-.card, .container-content-card {
-  background-color: white;
-  height: auto;
-  width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
-  margin: 10px;
-  max-width: 400px;
-}
-.card-img {
-  width: 100%;
-  height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 15px 15px 0px 0px;
-}
-.card-label {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  width: 100px;
-  border-radius: 5px;
-}
-
-/* This folder contains files that define the overall layout and structure. */
-/* Styles for your grid system */
-/*Styles for your grid system */
-/* Styles for your site or app's footer */
-/*Styles for your site or app's footer */
-/* Styles for your site or app's header */
-/*Variables defining your color palette*/
-/*Primary */
-/*Secondary */
-/*Tertiary*/
-.bg-grey {
-  background-color: #f6f6f6;
-}
-
-/*Mixins or functions to help with common styling tasks */ /*Styles for your site or app's header */
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: white;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.15);
-  padding: 20px 0;
-  z-index: 1;
-}
-header.home .fa-arrow-left {
-  display: none;
-}
-header:not(.home) .fa-arrow-left {
-  display: block;
-  margin: 10px;
-}
-
-.headerlogo {
-  padding-left: 30px;
-  padding-right: 90px;
-  max-width: 100%;
-  height: auto;
-  margin: auto;
-}
-
-/* This folder contains files that define styles that are specific to individual pages. */
-/* Styles for your site or app's home page */
-/*Mixins or functions to help with common styling tasks */ /*Variables defining your color palette*/
-/*Primary */
-/*Secondary */
-/*Tertiary*/
-.bg-grey {
-  background-color: #f6f6f6;
-}
-
-/*Styles for headings, paragraphs, and other text elements */ /*Styles for your site or app's home page */
-.loctation {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 0;
-  background-color: #eaeaea;
-  z-index: 0;
-}
-
-.center-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.center-container-heading, .center-container-description {
-  text-align: center;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: center;
-  margin: 30px;
-}
-.container-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-}
-.container-content-list {
-  color: white;
-  margin-right: -25px;
-  background-color: #9356DC;
-  padding: 5px 10px;
-  border-radius: 20px;
-  z-index: 1;
-}
-.container-content-card {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 15px 15px;
-}
-.container-content-card:hover {
-  background-color: #f5edff;
-}
-.container-content-card:hover i {
-  color: #9356DC;
-}
-
-.restaurants {
-  padding: 20px;
-}
-
-/* Styles for your site or app's menu page la franc */
-/* */
-/* Styles for your site or app's menu page la note */
-/* */
-/* Styles for your site or app's menu page la palette */
-/* */
-/* Styles for your site or app's menu page la de */
-/* */
-/* This folder contains files that define utility classes or functions that can be reused throughout. */
-/* Mixins or functions to help with common styling tasks */
-/*Mixins or functions to help with common styling tasks */
-/* Media queries and styles for different screen sizes */
-/*Media queries and styles for different screen sizes */
-/* Variables used throughout your project, such as spacing or border-radius */
-/*Styles for headings, paragraphs, and other text elements */ /*Variables defining your color palette*/
-/*Primary */
-/*Secondary */
-/*Tertiary*/
-.bg-grey {
-  background-color: #f6f6f6;
-}
-
-/*Variables used throughout your project, such as spacing or border-radius */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0px;
-}
-
-p, ul, ol, li, a {
-  font-family: "Roboto", sans-serif;
-  padding: 5px 10px;
-  margin: 5px;
-}
-
-h1 {
-  font-family: "Shrikhand", cursive;
-}
-
-h2, h3, h4, h5, h6 {
-  font-family: "Roboto", sans-serif;
-  padding: 5px 10px;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
 .text-small {
-  font-size: 16px;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 272px;
 }
 
 .text-med {
@@ -252,10 +36,800 @@ a {
 
 .text-light {
   font-weight: 300;
+  font-size: 18px;
 }
 
-.icon-small {
-  font-size: 16px;
+.text-small {
+  position: relative;
+  z-index: 0;
+  transition: max-width 0.5s ease;
+}
+
+/* This folder contains files that define styles for individual components. */
+/* Styles for different types of buttons */
+.text-small {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 272px;
+}
+
+.text-med {
+  font-size: 20px;
+}
+
+.text-big {
+  font-size: 24px;
+}
+
+.text-bold {
+  font-weight: 800;
+}
+
+.text-light {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.text-small {
+  position: relative;
+  z-index: 0;
+  transition: max-width 0.5s ease;
+}
+
+.gradient {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  z-index: 1;
+  position: relative;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+/*Mixins or functions to help with common styling tasks */
+.button {
+  color: white;
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  border-radius: 25px;
+  margin: 15px 5px 40px 5px;
+  min-width: 120px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+.button:hover {
+  background-image: linear-gradient(to bottom right, #fe8cdd, #a06cdf);
+  box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.button-utils {
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  padding: 15px 20px;
+  border: none;
+}
+
+/* Styles for card-like elements */
+.text-small {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 272px;
+}
+
+.text-med {
+  font-size: 20px;
+}
+
+.text-big {
+  font-size: 24px;
+}
+
+.text-bold {
+  font-weight: 800;
+}
+
+.text-light {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.text-small {
+  position: relative;
+  z-index: 0;
+  transition: max-width 0.5s ease;
+}
+
+.gradient {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  z-index: 1;
+  position: relative;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+/*Mixins or functions to help with common styling tasks */
+.card, .container-content-card {
+  background-color: white;
+  height: 70px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  max-width: 300px;
+}
+
+.restaurants-card {
+  background-color: white;
+  height: 255px;
+  width: 350px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.restaurants-card img {
+  width: 100%;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.restaurants-card .card-label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  color: #5fa090;
+  font-weight: 800;
+  width: 80px;
+  height: 30px;
+  border-radius: 5px;
+  position: relative;
+  bottom: 290px;
+  left: 250px;
+  z-index: 1;
+}
+.restaurants-card .empty {
+  position: relative;
+  left: 300px;
+  bottom: 75px;
+}
+.restaurants-card .full {
+  position: relative;
+  left: 300px;
+  bottom: 46.3px;
+  background-color: white;
+}
+
+/* This folder contains files that define the overall layout and structure. */
+/* Styles for your grid system */
+/*Mixins or functions to help with common styling tasks */
+.row-align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-center-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styles for your site or app's footer */
+.gradient {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  z-index: 1;
+  position: relative;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+/*Mixins or functions to help with common styling tasks */ /*Styles for your site or app's footer */
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 40px;
+  letter-spacing: 1px;
+}
+footer .fa-solid {
+  padding-right: 10px;
+}
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 15px;
+}
+footer p {
+  margin: 0;
+  padding: 10px 0;
+  color: white;
+}
+footer h4 {
+  font-size: 18px;
+}
+footer a {
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles for your site or app's header */
+.gradient {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  z-index: 1;
+  position: relative;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+/*Mixins or functions to help with common styling tasks */ /*Styles for your site or app's header */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.15);
+  padding: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+header.home .fa-arrow-left {
+  display: none;
+}
+header:not(.home) .fa-arrow-left {
+  display: block;
+  margin: 10px;
+}
+
+.headerlogo {
+  padding-left: 30px;
+  padding-right: 90px;
+  max-width: 80%;
+  height: auto;
+  margin: auto;
+}
+
+/* This folder contains files that define styles that are specific to individual pages. */
+/* Styles for your site or app's home page */
+/*Mixins or functions to help with common styling tasks */
+.gradient {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  z-index: 1;
+  position: relative;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+.text-small {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 272px;
+}
+
+.text-med {
+  font-size: 20px;
+}
+
+.text-big {
+  font-size: 24px;
+}
+
+.text-bold {
+  font-weight: 800;
+}
+
+.text-light {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.text-small {
+  position: relative;
+  z-index: 0;
+  transition: max-width 0.5s ease;
+}
+
+/*Styles for your site or app's home page */
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 1s 2s forwards;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid white;
+  border-top: 5px solid #99e2d0;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.content {
+  opacity: 0;
+  animation: fadeIn 1s 2s forwards;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}
+.loctation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  padding: 10px 0;
+  background-color: #eaeaea;
+  z-index: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container-heading, .container-description {
+  text-align: center;
+}
+.container-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.container-content-list {
+  color: white;
+  margin-right: -25px;
+  background-color: #9356dc;
+  padding: 5px 10px;
+  border-radius: 20px;
+  z-index: 1;
+}
+.container-content-heading, .container-content-description {
+  text-align: center;
+}
+.container-content-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 15px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+.container-content-card:hover {
+  background-color: #f5edff;
+}
+.container-content-card:hover i {
+  color: #9356dc;
+}
+
+.how-it-works {
+  background-color: white;
+}
+.how-it-works .container {
+  margin: 10px;
+  padding: 10px;
+}
+
+/* Styles for your site or app's menu page la franc */
+/*Mixins or functions to help with common styling tasks */
+.gradient {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  z-index: 1;
+  position: relative;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+.text-small {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 272px;
+}
+
+.text-med {
+  font-size: 20px;
+}
+
+.text-big {
+  font-size: 24px;
+}
+
+.text-bold {
+  font-weight: 800;
+}
+
+.text-light {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.text-small {
+  position: relative;
+  z-index: 0;
+  transition: max-width 0.5s ease;
+}
+
+.full-width-image {
+  width: 100%;
+  height: 38vh;
+}
+.full-width-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.menu-background {
+  background-color: #f6f6f6;
+  border-radius: 25px 25px 0 0;
+  position: relative;
+  margin-top: -50px;
+}
+.menu-background h1 {
+  padding: 40px 10px;
+}
+.menu-background .empty {
+  position: relative;
+  float: right;
+  bottom: 80px;
+}
+.menu-background .full {
+  position: relative;
+  right: 24px;
+  float: right;
+  bottom: 80px;
+}
+.menu-background .row-align {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu .menu-header::after {
+  content: "";
+  display: block;
+  width: 10%;
+  border-bottom: 3px solid #99e2d0;
+}
+
+.text-price-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.entrees,
+.main-dish,
+.desserts {
+  animation: slide-up 1s ease-out forwards;
+  animation-delay: 0.25s;
+}
+.entrees .card,
+.entrees .container-content-card,
+.main-dish .card,
+.main-dish .container-content-card,
+.desserts .card,
+.desserts .container-content-card {
+  position: relative;
+  background-color: white;
+  height: auto;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  max-width: 350px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.entrees p,
+.main-dish p,
+.desserts p {
+  line-height: 1.5px;
+}
+
+.entrees {
+  animation: slide-up 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.25s both;
+  animation-delay: 0.25s;
+}
+
+.main-dish {
+  animation: slide-up 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.25s both;
+  animation-delay: 0.5s;
+}
+
+.desserts {
+  animation: slide-up 1s cubic-bezier(0.39, 0.575, 0.565, 1) 0.25s both;
+  animation-delay: 0.75s;
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.check__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -80px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #99e2d0;
+  width: 80px;
+  height: 100px;
+  transition: right 0.5s ease;
+  z-index: 1;
+}
+
+.fa-circle-check {
+  color: white;
+  transform: rotate(0);
+  transition: transform 0.5s ease;
+}
+
+.text-bold {
+  position: absolute;
+  right: -3px;
+  transition: right 0.5s ease;
+}
+
+.card:hover .check__container, .container-content-card:hover .check__container {
+  right: 0px;
+}
+.card:hover .fa-circle-check, .container-content-card:hover .fa-circle-check {
+  transform: rotate(360deg);
+}
+.card:hover .text-bold, .container-content-card:hover .text-bold {
+  right: 65px;
+}
+
+.card:hover .text-price-hover, .container-content-card:hover .text-price-hover {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 60%;
+}
+
+/* This folder contains files that define utility classes or functions that can be reused throughout. */
+/* Mixins or functions to help with common styling tasks */
+/*Mixins or functions to help with common styling tasks */
+/* Media queries and styles for different screen sizes */
+/*Mixins or functions to help with common styling tasks */ /*Media queries and styles for different screen sizes */
+@media (min-width: 768px) {
+  .restaurants > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  footer > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
+  .how-it-works > .flex-center-col > .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+  }
+} /* Variables used throughout your project, such as spacing or border-radius */
+.text-small {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 272px;
+}
+
+.text-med {
+  font-size: 20px;
+}
+
+.text-big {
+  font-size: 24px;
+}
+
+.text-bold {
+  font-weight: 800;
+}
+
+.text-light {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.text-small {
+  position: relative;
+  z-index: 0;
+  transition: max-width 0.5s ease;
+}
+
+.gradient {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  z-index: 1;
+  position: relative;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+/*Variables used throughout your project, such as spacing or border-radius */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+p,
+ul,
+ol,
+li,
+a {
+  font-family: "Roboto", sans-serif;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+h6,
+h4,
+h1 {
+  font-family: "Shrikhand", cursive;
+  padding: 0px 10px;
+  margin: 5px;
+  font-size: 27px;
+}
+
+h2,
+h3,
+h5 {
+  font-family: "Roboto", sans-serif;
+  padding: 5px 15px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.hide {
+  display: none !important;
+}
+
+.full {
+  background-color: #f6f6f6;
+  opacity: 0;
+  z-index: 1;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+.full:hover {
+  opacity: 1;
+}
+
+/* This folder contains files for any third-party libraries or vendor styles that you may be using. */
+/* Styles for Font Awesome icons */
+.gradient {
+  background-image: linear-gradient(to bottom right, #ff79da, #9356dc);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  z-index: 1;
+  position: relative;
+}
+
+.bg-grey {
+  background-color: #f6f6f6;
+}
+
+/*Styles for Font Awesome icons */
+.fa-mobile-screen-button {
+  padding: 0 18px;
 }
 
 .icon-med {
@@ -272,11 +846,4 @@ a {
 
 .icon--color-grey {
   color: #353535;
-}
-
-/* This folder contains files for any third-party libraries or vendor styles that you may be using. */
-/* Styles for Font Awesome icons */
-/*Styles for Font Awesome icons */
-.fa-mobile-screen-button {
-  padding: 0 18px;
 }/*# sourceMappingURL=main.css.map */

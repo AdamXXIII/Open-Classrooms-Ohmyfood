@@ -1,1 +1,30 @@
 /*Media queries and styles for different screen sizes */
+@use "../utils/_helpers.scss" as h;
+
+@media (min-width: 768px) {
+    .restaurants>.container {
+        @include h.flex(row, center, center);
+        flex-wrap: wrap;
+    }
+
+    footer>.container {
+        @include h.flex(row, space-between, center);
+    }
+}
+
+
+
+
+
+@media (min-width: 1024px) {
+    .how-it-works>.flex-center-col>.container {
+        @include h.flex(row, center, center);
+    }
+
+    .menu {
+        @include h.flex(row, space-around, flex-start);
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+}

@@ -1,1 +1,34 @@
 /*Styles for your site or app's footer */
+@use "../base/_colors.scss" as c;
+@use "../utils/_helpers.scss" as h;
+
+footer {
+  background-color: c.$darkgrey;
+  color: c.$white;
+  padding: 40px;
+  letter-spacing: 1px;
+
+  & .fa-solid {
+    padding-right: 10px;
+  }
+
+  .container {
+    @include h.flex(column, null, flex-start);
+    margin: 0 15px;
+  }
+
+  p {
+    margin: 0;
+    padding: 10px 0;
+    color: c.$white;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  a {
+    margin: 0;
+    padding: 0;
+  }
+}
