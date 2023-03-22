@@ -1,21 +1,26 @@
-/*Variables defining your color palette*/
-/*Primary */
-$purple: #9356DC;
-/*Secondary */
-$pink: #FF79DA;
-/*Tertiary*/
-$teal: #99E2D0;
-
+$purple: #9356dc;
+$pink: #ff79da;
+$teal: #99e2d0;
+$btn-hover-pink: #fe8cdd;
+$btn-hover-purple: #a06cdf;
 $lightpink: #f5edff;
 $white: white;
 $black: black;
 $grey: #f6f6f6;
 $geogrey: #eaeaea;
 $darkgrey: #353535;
+$darkteal: #5fa090;
+$gradient: linear-gradient(to bottom right, $pink, $purple);
+$lightgradient: linear-gradient(to bottom right, $btn-hover-pink, $btn-hover-purple);
 
-$gradient:linear-gradient(to bottom, $pink, $purple);
-
-.bg-grey {
-    background-color: $grey;
+.gradient {
+  background-image: $gradient;
+  background-clip: text;
+  color: transparent;
+  z-index: 1;
+  position: relative;
 }
 
+.bg-grey {
+  background-color: $grey;
+}

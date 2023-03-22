@@ -1,5 +1,19 @@
 /*Styles for Font Awesome icons */
+@use "../base/_colors.scss" as c;
+.fa-mobile-screen-button {
+  padding: 0 18px;
+}
+.icon-med {
+  font-size: $icon-med;
+}
+.icon-big {
+  font-size: $icon-big;
+}
 
-.fa-mobile-screen-button{
-    padding: 0 18px;
+.icon-card {
+  padding: 0 15px;
+}
+
+.icon--color-grey {
+  color: c.$darkgrey;
 }
